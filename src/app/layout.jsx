@@ -29,12 +29,16 @@ export default function RootLayout({ children }) {
           <Toaster
             position="top-center"
             reverseOrder={false}
+            containerStyle={{
+              zIndex: 9999,
+            }}
             toastOptions={{
               duration: 3000,
               style: {
                 background: "#333",
                 color: "#fff",
                 borderRadius: "10px",
+                zIndex: 9999,
               },
             }}
           />
